@@ -22,7 +22,6 @@ underline for navigation a tags
 border-bottom: .2rem;
 */
 
-
 body {
   margin: 0;
 }
@@ -38,7 +37,7 @@ header {
 
 header h1 {
   margin-bottom: 0;
-  margin-top: .85rem;
+  margin-top: .87rem;
 }
 
 header h2 {
@@ -68,7 +67,7 @@ a {
 
 header img {
   margin: 0;
-  padding: 1rem;
+  padding: .96rem;
 }
 
 section {
@@ -79,4 +78,20 @@ section {
 
 article a {
   text-decoration: none;
+}
+
+main {
+  margin: 1.5rem;
+}
+
+div i {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  border-bottom: .2rem;
+  border-top: .2rem;
 }
