@@ -29,9 +29,6 @@ body {
 img {
   display: block;
   width: 100%;
-  height: 100%;
-
-  margin-top: 0;
 }
 
 header {
@@ -74,12 +71,16 @@ a {
   font-size: 1.125rem;
 }
 
-header img {
+/* header img {
   margin: 0;
   padding: 1rem;
   padding-bottom: .5rem;
   display: block;
   width: 100%;
+} */
+
+main img {
+  margin-bottom: 1.5rem;
 }
 
 section {
@@ -96,6 +97,10 @@ article {
   padding-top: 1.25rem;
 }
 
+article img {
+  margin-bottom: 0;
+}
+
 article a {
   font-size: 1rem;
   text-decoration: none;
@@ -106,6 +111,7 @@ article a {
 
 main {
   margin: 1rem;
+  padding-top: 0;
 
   grid-area: main;
 }
@@ -153,24 +159,15 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    grid-column-gap: 1.5rem;
-  }
-
-  section img {
-    width: 100%;
-  }
-
   header {
     margin: 1.5rem;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
     grid-template-areas:
-      "left right"
-      "image image";
+      "left right";
   }
 
   h1 {
@@ -185,7 +182,7 @@ footer {
 
   nav {
     grid-area: right;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
   }
 
   ul {
@@ -197,10 +194,28 @@ footer {
     padding-right: 0;
   }
 
-  header img {
+  /* header img {
+    margin-top: 10rem;
     padding: 0;
+    width: 100%;
     display: flex;
+
     grid-area: image;
+  } */
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 1.5rem;
   }
+
+  section img {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 62.5em) {
 
 }
