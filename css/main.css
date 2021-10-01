@@ -166,8 +166,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
-    grid-template-areas:
-      "left right";
+    grid-template-areas: "left right";
   }
 
   h1 {
@@ -203,6 +202,10 @@ footer {
     grid-area: image;
   } */
 
+  main {
+    margin-top: .75em;
+  }
+
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -218,8 +221,22 @@ footer {
 
 @media only screen and (min-width: 62.5em) {
 
-  div {
-    justify-content: center;
+  html {
+    font-size: 105%;
+  }
+
+  header {
+    margin-bottom: .75rem;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .intro {
+    max-width: 30rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
 }
