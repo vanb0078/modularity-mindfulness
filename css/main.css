@@ -218,4 +218,8 @@ footer {
 
 @media only screen and (min-width: 62.5em) {
 
+  div {
+    justify-content: center;
+  }
+
 }
